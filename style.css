@@ -101,9 +101,10 @@ a{
 
 .question-btn{
     background-color: white;
-    border: 1px solid black;
+    border: none;
     padding: 10px;
     border-radius: 100%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.253) ;
 }
 
 /*main page*/
