@@ -1,0 +1,275 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    inline-size: 1.7;
+}
+
+.clr{
+    clear: both;
+}
+
+.menu-icon{
+        width: 20px;
+        height: 2px;
+        background-color: white;
+        margin-bottom: 2.5px;
+}  
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.page-element{
+    height: 100vh;
+}
+
+.mini-title{
+    font-size: 20px;
+    color: rgb(85,87,92)
+}
+
+.primary-title{
+    font-size: 30px;
+    font-weight: bolder;
+    color:black
+}
+
+.info-style{
+    font-size: 15px;
+    color: rgb(31, 32, 34);
+    font: bolder;
+}
+
+/*btn*/
+.white-btn{
+    color: white;
+    border:3px solid white ;
+    background-color: rgba(0,0,0,0);
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-weight: bolder;
+}
+
+.white-btn:hover{
+    color: black;
+    background-color: white; 
+}
+
+.black-btn{
+    color: black;
+    border:3px solid black ;
+    background-color: rgba(0,0,0,0);
+    border-radius: 20px;
+    padding: 7px 25px;
+    font-weight: bolder;
+}
+
+.black-btn:hover{
+    color: white;
+    background-color: black; 
+}
+
+.circle-btn{
+    background: rgba(0,0,0,0);
+    border: none;
+    width: 120px;   
+}
+
+
+.plus-sigh{
+    border: 3px solid black;
+    border-radius: 100%;
+    background: rgba(0,0,0,0);
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+
+.plus-sigh:hover{
+    fill: white;
+    background: black;
+    border: white;
+}
+
+.plus-text{
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 14px;
+}
+
+.question-btn{
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+/*main page*/
+.main-page{
+    background: url(https://www.tesla.com/sites/default/files/model3-new/hero/model-3-hero-desktop-v2.jpg) no-repeat center center/cover;
+}
+
+
+.main-icon .logo{
+    position: fixed;
+    float: left;
+    height: 10px;
+    margin: 7px;
+}
+
+.main-page:hover .logo{
+    fill: white;
+}
+.header{
+    padding-top: 10px;
+    height: 12px;
+    position: relative;
+}
+
+.nav{
+    list-style: none;
+    max-height: 100%;
+    font-weight: bolder;
+    color:white;
+}
+
+.models-links{
+    float: left;
+    margin-left: 25%;
+}
+
+
+.nav li{
+    display: inline;
+    padding: 5px;
+    font-size: 15px;
+}
+.options{
+    float: right;
+}
+
+.menu-icon-final{
+    float: right;
+}
+
+.page-one-info{
+    color: white;
+    width: 55%;
+    height: 75%;
+    position: relative;
+    margin: 2% 25%;
+}
+.pic{
+    width: 50px;
+}
+
+.model-title{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 45%;
+}
+
+
+.info-page-one{
+    float: left;
+    padding: 0px 5%;
+}
+
+.info-middle-options{
+    border-right: 0.5px white solid;
+    border-left: 0.5px white solid;
+}
+
+.speed-icon{
+    width: 35px;
+    float: left;
+    fill: #fff;
+    margin: 5px;
+}
+
+.prime-i{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.white-arr{
+    width: 25px;
+    position: absolute;
+    left: 50%;
+    margin-top: 15px;
+}
+
+.white-arr:hover{
+    margin-top: 20px;
+}
+
+.send-msg{
+    position: fixed;
+    right: 30px;
+    bottom: 100px;
+}
+
+/*side bar*/
+.side-bar{
+    position: fixed;
+    top: 100px;
+    left: 15px;
+    line-height: 2;
+}
+
+.side-bar ul{
+    list-style: none;
+}
+
+.side-bar li{
+    color: rgba(0,0,0,0);
+    font-weight: bolder;
+    font-size: 10px;
+    margin-bottom: 5px;
+    padding-left: 7px;
+    border-left: 0.5px rgba(255, 255, 255, 0.5) solid;
+}
+
+.side-bar .current{
+    border-left:3px white solid;
+}
+
+
+.side-bar li:hover{
+    color: white;
+}
+
+
+/*page two*/
+.page-two{
+    background: #ffffff;
+}
+
+.safety-info{
+    min-height: 100%;
+    float: left;
+    width: 30%;
+    padding: 30px 0px 0px 30px;
+}
+.page-two img{
+    min-height: 100%;
+    display: block;
+    background-color: rgb(244,244,244);
+    float: right;
+    width: 70%;
+}
+
+.page-two-info{
+    margin-top: 50px;
+    margin-bottom: 40%;
+    max-width: 90%;
+}
+
+
+
+
+
+
