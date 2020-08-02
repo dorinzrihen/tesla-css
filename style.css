@@ -1,9 +1,15 @@
+@font-face{
+    font-family: 'gotham';
+    src: url(/GothamBook.ttf);
+}
+
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "gotham";
     box-sizing: border-box;
-    inline-size: 1.7;
+    list-style: none;
+    line-height: 1.6;
 }
 
 .clr{
@@ -14,7 +20,7 @@
         width: 20px;
         height: 2px;
         background-color: white;
-        margin-bottom: 2.5px;
+        margin-top: 2.5px;
 }  
 
 a{
@@ -23,6 +29,7 @@ a{
 }
 .page-element{
     height: 100vh;
+    width: 100%;
 }
 
 .mini-title{
@@ -44,6 +51,7 @@ a{
 
 /*btn*/
 .white-btn{
+    font-size: 12px;
     color: white;
     border:3px solid white ;
     background-color: rgba(0,0,0,0);
@@ -58,6 +66,7 @@ a{
 }
 
 .black-btn{
+    font-size: 12px;
     color: black;
     border:3px solid black ;
     background-color: rgba(0,0,0,0);
@@ -74,7 +83,8 @@ a{
 .circle-btn{
     background: rgba(0,0,0,0);
     border: none;
-    width: 120px;   
+    width: 150px;   
+    font-weight: lighter;
 }
 
 
@@ -105,6 +115,7 @@ a{
     padding: 10px;
     border-radius: 100%;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.253) ;
+    cursor: pointer;
 }
 
 /*main page*/
@@ -113,98 +124,118 @@ a{
 }
 
 
-.main-icon .logo{
+.logo{
     position: fixed;
     float: left;
     height: 10px;
-    margin: 7px;
+    margin-left: 15px;
+    margin-top: 7px;
+    z-index: 10;
 }
 
 .main-page:hover .logo{
     fill: white;
 }
 .header{
-    padding-top: 10px;
-    height: 12px;
+    padding-top: 7px;
+    height: 30px;
+    width: 100%vh;
     position: relative;
 }
-
-.nav{
-    list-style: none;
-    max-height: 100%;
-    font-weight: bolder;
-    color:white;
+.toolbar{
+    position: absolute;
+    left: 30%;
 }
 
-.models-links{
-    float: left;
-    margin-left: 25%;
-}
-
-
-.nav li{
+.toolbar li, .options li{
     display: inline;
-    padding: 5px;
-    font-size: 15px;
+    padding-left: 10px;
+}
+
+.header a{
+    font-size: 12px;
+    font-weight: bold;
 }
 .options{
-    float: right;
+    position: absolute;
+    right: 0px;
 }
 
 .menu-icon-final{
     float: right;
+    padding-top: 5px;
+    margin-right: 7px;
+    width: 20%;
+    
 }
 
 .page-one-info{
     color: white;
-    width: 55%;
-    height: 75%;
+    width: 650px;
+    height: 450px;
     position: relative;
     margin: 2% 25%;
-}
-.pic{
-    width: 50px;
 }
 
 .model-title{
     font-size: 40px;
     text-align: center;
     font-weight: bolder;
-    margin-bottom: 45%;
+    margin-bottom: 250px;
 }
+
+
+.seperator{
+    border-left: 1px solid rgb(255, 255, 255);
+    height: 60px;
+}
+
+
+.container ul{
+    display: inline;
+}
+
 
 
 .info-page-one{
     float: left;
-    padding: 0px 5%;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
-.info-middle-options{
-    border-right: 0.5px white solid;
-    border-left: 0.5px white solid;
+.info-page-one .white-btn{
+    margin-top: 15px;
 }
+
 
 .speed-icon{
     width: 35px;
     float: left;
     fill: #fff;
-    margin: 5px;
+    margin-top: 15px;
+    margin-right:10px;
 }
 
 .prime-i{
     font-size: 30px;
     font-weight: bolder;
+    display: inline;
 }
 
+
+.text-i{
+    font-size: 12px;
+    text-align: center;
+}
 .white-arr{
     width: 25px;
     position: absolute;
     left: 50%;
-    margin-top: 15px;
+    bottom: 5px;
 }
 
 .white-arr:hover{
-    margin-top: 20px;
+    bottom: 0px;
 }
 
 .send-msg{
@@ -213,33 +244,34 @@ a{
     bottom: 100px;
 }
 
-/*side bar*/
-.side-bar{
-    position: fixed;
-    top: 100px;
-    left: 15px;
-    line-height: 2;
+/*side bar + in main menu*/
+.side-bar ,.side-bar-2{
+    display: none;
 }
 
-.side-bar ul{
-    list-style: none;
-}
-
-.side-bar li{
+.main-page:hover .side-bar li,.page-two:hover .side-bar-2 li,.page-tree:hover .side-bar li{
     color: rgba(0,0,0,0);
     font-weight: bolder;
     font-size: 10px;
     margin-bottom: 5px;
     padding-left: 7px;
     border-left: 0.5px rgba(255, 255, 255, 0.5) solid;
+} 
+
+.main-page:hover .side-bar, .page-two:hover .side-bar-2,.page-tree:hover .side-bar{
+    display: block;
+    position: fixed;
+    top: 100px;
+    left: 15px;
+    line-height: 2;
 }
 
-.side-bar .current{
+.main-page:hover .side-bar .current,.page-tree:hover .side-bar .current{
     border-left:3px white solid;
 }
 
 
-.side-bar li:hover{
+.main-page:hover .side-bar li:hover,.page-tree:hover .side-bar li:hover{
     color: white;
 }
 
@@ -252,7 +284,7 @@ a{
 .safety-info{
     min-height: 100%;
     float: left;
-    width: 30%;
+    width: 35%;
     padding: 30px 0px 0px 30px;
 }
 .page-two img{
@@ -260,17 +292,102 @@ a{
     display: block;
     background-color: rgb(244,244,244);
     float: right;
-    width: 70%;
+    width: 65%;
 }
 
 .page-two-info{
     margin-top: 50px;
-    margin-bottom: 40%;
+    margin-bottom: 25%;
     max-width: 90%;
 }
 
+/*page two side bar*/
+
+.page-two:hover .side-bar-2 li{
+    border-left: 0.5px rgba(0, 0, 0, 0.5) solid;
+} 
+
+.side-bar-2 ul{
+    list-style: none;
+}
 
 
+.page-two:hover .side-bar-2 .current{
+    border-left:3px black solid;
+}
 
+
+.page-two:hover .side-bar-2 li:hover{
+    color: black;
+}
+
+
+/*page 3*/
+.page-tree{
+    background-color: #fff;
+}
+
+.page-tree-head{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    color: white;
+
+}
+
+.page-tree-info{
+    height: 50%;
+    width: 80%;
+    position: absolute;
+    top:50%;
+    left: 10%;
+    list-style: none;
+}
+
+
+.page-tree-info li{
+    max-width: 270px;
+    text-align: left;
+}
+
+.car-video{
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    z-index: auto;
+ 
+}
+.container-page-tree{
+    position: relative;
+    width: 100%;
+    height: 50%;
+
+}
+.performance-info{
+    position: absolute;
+    top:50px;
+    left: 100px;
+    height: 200px;
+}
+
+.preform-title{
+    float: left;
+    margin-right: 20px;
+}
+
+.preform-title .primary-title{
+    margin-bottom: 20px;
+}
+
+.primary-info{
+    float: right;
+    max-width: 85%;
+    overflow: auto;
+}
+
+.seperator-bigger{
+    height: 100px;
+}
 
 
